@@ -15,7 +15,7 @@ window.onload = () => {
 // Admin login function (for simplicity, no password validation)
 function adminLogin() {
   const password = prompt('Enter admin password:');
-  if (password === '201021') {
+  if (password === '12345') {
     isAdmin = true;
     localStorage.setItem('isAdmin', 'true');
     toggleAdminPanel(true);
