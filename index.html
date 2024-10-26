@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Over It - Remix Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Best Remakes!</h1>
+    <button id="admin-login">Admin Login</button>
+    <button id="admin-logout" style="display: none;">Logout</button>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h2 id="selected-project-name">Select a Project</h2>
+      <ul id="project-list"></ul>
+      <div id="admin-panel" style="display: none;">
+        <h4>Add New Project</h4>
+        <input type="text" id="project-name" placeholder="Project Name">
+        <input type="text" id="project-url" placeholder="Scratch Project Embed URL">
+        <button onclick="addProject()">Add Project</button>
+      </div>
+      <iframe 
+        id="scratch-embed" 
+        src="" 
+        allowtransparency="true" 
+        width="800" height="600" 
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>Made with ❤️ by Greninja9257</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
